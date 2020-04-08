@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        {{function('wp_head')}}
+        <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">      
+    </head>
+
+    <body>
+        <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+            <nav class="uk-navbar-container" uk-navbar>
+                <div class="uk-navbar-left">
+                    <a href="" class="uk-navbar-item uk-logo">
+                        <img src="{{ site.theme.uri }}/assets/dist/img/kidsteam.svg" class="ctx-logo-image" uk-svg width="70" height="70px">
+                    </a>
+                </div>
+                <div class="uk-navbar-right">
+                    {% include "partials/menu.twig" with {'menu': menu.get_items} %}
+                </div>
+            </nav>
+        </div>
+  
+        {% block content %}
+            Wenn Sie das lesen können, gab es ein schweres Problem mit unserer Seite.
+        {% endblock %}
+
+        <footer class="uk-section uk-section-black uk-light">
+            <div class="uk-container">{{footer}}</div>
+            {{function('wp_footer')}}
+        </footer>
+    </body>
+</html>

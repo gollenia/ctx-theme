@@ -1,0 +1,12 @@
+{% extends "master.twig" %}
+
+{% block content %}
+    <header style="background-image:url('{{ Image(post._thumbnail_id).src }}')">
+        
+    </header>    
+
+    <article>
+        {# the_content muss aufgerufen werden um die Gutenberg-Blöcke zu rendern. #}
+        {{ function( 'apply_filters', 'the_content', post.content ) }}
+    </article>
+{% endblock %}
