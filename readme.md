@@ -1,4 +1,4 @@
-# Kids Team Theme for Wordpress
+# Basic Theme for wordpress
 
 This theme is created for the Wordpress-powered Website from kids-team.at/de/ch. It tries to combine newest technology like webpack and twig (via Timber) with a clear, class-based structure. This document may be a guideline for anyone who works on the page.
 
